@@ -1,4 +1,3 @@
-from logging import error
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -24,7 +23,7 @@ while True:
             loginbutton=driver.find_element_by_xpath('//*[@id="loginForm"]/div[1]/div[3]/button').click()
         except:
             pass
-
+        
         sleep(sn+3)
         
         driver.get('https://www.instagram.com/' + "username giriniz ") #username giriniz 
